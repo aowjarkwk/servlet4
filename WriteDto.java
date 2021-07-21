@@ -15,6 +15,16 @@ public class WriteDto {
 	public WriteDto() {
 		super();
 	}
+	public WriteDto(int board_idx, String board_name, String board_title, String board_content, String board_date,
+			int board_hit) {
+		super();
+		this.board_idx = board_idx;
+		this.board_name = board_name;
+		this.board_title = board_title;
+		this.board_content = board_content;
+		this.board_date = board_date;
+		this.board_hit = board_hit;
+	}
 	public int getBoard_idx() {
 		return board_idx;
 	}
@@ -49,16 +59,6 @@ public class WriteDto {
 		return board_hit;
 	}
 	public void setBoard_hit(int board_hit) {
-		this.board_hit = board_hit;
-	}
-	public WriteDto(int board_idx, String board_name, String board_title, String board_content, String board_date,
-			int board_hit) {
-		super();
-		this.board_idx = board_idx;
-		this.board_name = board_name;
-		this.board_title = board_title;
-		this.board_content = board_content;
-		this.board_date = board_date;
 		this.board_hit = board_hit;
 	}
 	
